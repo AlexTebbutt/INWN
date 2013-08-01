@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Gridset Demo</title>
+
+<meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=0, initial-scale=1">
+
+<link rel="stylesheet" href="./css/gridset.css" />
+
+<!-- Totally unnecessary demo styles - REMOVE FOR YOUR USE -->
+<style type="text/css">
+
+	/* simple reset */
+		html, body, h1, div, div {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			outline: 0;
+			font-size: 100%;
+			vertical-align: baseline;
+			background: transparent;
+		}
+	
+		body {
+			font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+			color: #333;
+			background: #f8f8f7;
+			text-align: center;
+			padding-top: 40px;
+			line-height: 1;
+		}
+	
+		
+		hr {
+			display: none;
+			*display: block;
+			width: 100%;
+			border: none;
+			background: none;
+			float: left;
+			clear: both;
+			height: 0;
+			margin: 0;
+			visibility: hidden;
+		}
+		
+		div {
+			float: left;
+			width: 100%;
+			margin-bottom: 40px;
+			display: block;
+			position: relative;
+			*zoom: 1;
+		}
+		
+		div h1 {
+			margin: 0 0 20px;
+			font-size: 24px;
+		}
+	
+		.box {
+			outline: 1px solid #99999a;
+			*border: 1px solid #99999a;
+			margin-bottom: 20px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		
+		.box h1 {
+			margin: 0;
+			font-size: 15px;
+		}
+		
+		.box[class*=pad] {
+			background: #99999a;
+			padding-top: 0;
+			padding-bottom: 0;
+			outline: none;
+			border-top: 1px solid #99999a;
+			border-bottom: 1px solid #99999a;
+		}
+		
+		.box[class*=pad] h1 {
+			background: #f8f8f7;
+			outline: none;
+			padding: 10px 0;
+		}
+
+</style>
+
+</head>
+<body>
+	
+	<div class="wrapper">
+	
+		<div class="">
+
+			<h1>Alpha</h1>
+
+			<!-- class examples -->
+			<div class="a1 box"><h1>a1</h1></div>
+			<div class="a2 box"><h1>a2</h1></div>
+			<div class="a3 box"><h1>a3</h1></div>
+			<div class="a4 box"><h1>a4</h1></div>
+			<div class="a5 box"><h1>a5</h1></div>
+			<div class="a6 box"><h1>a6</h1></div>
+			<div class="a7 box"><h1>a7</h1></div>
+			<div class="a8 box"><h1>a8</h1></div>
+			<div class="a9 box"><h1>a9</h1></div>
+			<div class="a10 box"><h1>a10</h1></div>
+			<div class="a11 box"><h1>a11</h1></div>
+			<div class="a12 box"><h1>a12</h1></div>
+
+			<hr />
+
+			<!-- column span examples -->
+			<div class="a1-a6 box"><h1>a1-a6</h1></div>
+			<div class="a7-a12 box"><h1>a7-a12</h1></div>
+
+			<hr />
+
+			<!-- full width example -->
+			<div class="a-all box"><h1>a-all</h1></div>
+
+			<hr />
+
+			<!-- padding examples -->
+			<div class="a1 a-padin box"><h1>a1 a-padin</h1></div>
+			<div class="a12 a-pad box"><h1>a12 a-pad</h1></div>
+
+			<hr />
+			<div class="a1 a-padinfull box"><h1>a1 a-padinfull</h1></div>
+			<div class="a12 a-padfull box"><h1>a12 a-padfull</h1></div>
+
+		</div><!-- end Alpha -->
+
+
+		
+	</div>
+	
+	<!-- Gridset overlay script - toggles grid overlay on and off - You can remove this if you want. -->
+	<script src="./js/gridset-overlay.js"></script>	
+
+</body>
+</html>

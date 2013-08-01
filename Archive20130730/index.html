@@ -23,7 +23,8 @@
 	
 	<meta name="google-site-verification" content="" />
 	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
-
+	
+	<meta name="author" content="" />
 	<meta name="Copyright" content="" />
 	
 	<!--  Mobile Viewport Fix
@@ -48,6 +49,7 @@
 		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
 		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
 	
+		 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400|Open+Sans:400,300|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 	<!-- concatenate and minify for production -->
 	<link rel="stylesheet" href="_/css/reset.css" />
 	<link rel="stylesheet" href="_/css/style.css" />
@@ -77,50 +79,59 @@
 
 <body>
 
-<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+<header class="wrapper">
 
-	<header>
-		
-		<h1><a href="/">Page Title</a></h1>
-		
-		<nav>
-		
-			<ol>
-				<li><a href="">Nav Link 1</a></li>
-				<li><a href="">Nav Link 2</a></li>
-				<li><a href="">Nav Link 3</a></li>
-			</ol>
-		
-		</nav>
+	<h1>IF&nbsp;NOT&nbsp;WHY&nbsp;NOT</h2>
 	
-	</header>
-	
-	<article>
-		
-		<h1>Article Header</h1>
-		
-		<p>Etiam pretium odio eu mi convallis vitae varius neque pharetra. Nulla vestibulum nisi ut sem cursus sed mattis nisi egestas.</p>
-		
-		<h2>Article Subhead</h2>
-		
-		<p>Vestibulum lacus erat, volutpat vel dignissim at, fringilla ut felis.</p>
-	
-	</article>
-	
-	<aside>
-	
-		<h2>Sidebar Content</h2>
-	
-	</aside>
-	
-	<footer>
-		
-		<p><small>&copy; Copyright Your Name Here 2013. All Rights Reserved.</small></p>
-		
-	</footer>
+	<p>Yep, we're re-building so there's not much to see here I'm afraid.</p>
+	<p>We are currently taking on projects though, so do drop us a line.</p>
 
-</div>
+</header>
 
+<section id="getintouch" class="wrapper">
+	
+		<form id="get-in-touch" action="index.php" method="post">
+		
+			<div class="outline fullname">
+	
+				<label for="name">Name</label>
+				
+				<input id="name" name="name" type="text" placeholder="Full name" required="" />
+
+			</div>
+			
+			<div class="outline email">
+	
+				<label for="email">Email</label>
+				
+				<input id="email" name="email" type="email" placeholder="name@place.com" required="" />
+
+			</div>
+
+			<div class="outline phone-number">
+			
+				<label for="phone-number">Contact No</label>
+				
+				<input id="phone-number" type="tel" placeholder="020 1234 5678" />
+				
+			</div>
+
+			<label class="message-label" for="message">How can we help?</label>
+
+			<div class="outline message">
+			
+				<textarea id="message" name="message"></textarea>
+
+			</div>
+			
+			<input id="submit" name="submit" type="submit" value="submit" />
+		
+		</form>
+
+	</div>
+
+</section>
+	
 <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
 		 http://chromium.org/developers/how-tos/chrome-frame-getting-started -->
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->

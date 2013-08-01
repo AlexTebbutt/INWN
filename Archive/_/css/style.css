@@ -32,13 +32,105 @@ input:-moz-placeholder { color:#a9a9a9; }
 textarea:-moz-placeholder { color:#a9a9a9; }
 
 
-/* Grid Layout
+/* The Good Stuff
 -------------------------------------------------------------------------------*/
+/*
+body {
+	height: 100%;
+}
+*/
 
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
 
+header {
+	height: 600px;
+}
 
+#hello {
+	background-color: rgba(0,247,255,1);
+}
 
+#hello, #work, #getintouch {
+	height: 600px;
+	padding-top: 12.5%;
+}
 
+#getintouch {
+	background-color: rgba(233,253,255,1);
+}
+
+.faq-item {
+	text-align: left;
+}
+
+.faq-question {
+	padding-bottom: 20px;
+}
+
+/* Typography
+-------------------------------------------------------------------------------*/
+/* Base font size */
+body {
+	font-size: 16px;
+}
+
+header h1 {
+	color: rgb(0,0,0);
+	font-size: 4.375em;
+	padding: 0;
+	margin-top: 200px;
+}
+
+header p {
+	color: rgba(120,120,120,1);
+	font-size: 1.7em;
+}
+
+ul li {
+	display: inline;
+}
+
+nav {
+	text-transform: uppercase;
+}
+nav ul li a {
+	border-bottom: 2px solid rgba(255,255,255,1);
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	color: rgb(0,0,0);
+	padding-bottom: 2px;	
+	text-decoration: none;
+	-webkit-transition: border-color .5s;
+	-moz-transition: border-color .5s;
+	-o-transition: border-color .5s;
+	-ms-transition: border-color .5s;
+	transition: border-color .5s;	
+}
+
+nav ul li a:hover {
+	color: rgb(0,0,0);
+}
+
+nav ul li a.selected {
+	border-bottom-color: rgba(13,189,248,1);
+}
+
+nav ul li a:hover {
+	border-bottom-color: rgba(162,162,162,1);	
+}
+
+nav ul li a:hover {
+	transition-property: color;
+	
+}
+
+p {
+	padding-bottom: 5px;
+}
 
 /* Print styles!
 -------------------------------------------------------------------------------*/
@@ -49,37 +141,10 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 }
 
 
-/* #Media Queries: From Skeleton.
-================================================== */
-
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
-
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
-
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
-
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
-
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
-	
-	
-/* All stuff I've commented out, nmay need to re-instate later. If not, delete */
 /* Media queries!
 -------------------------------------------------------------------------------*/
-/*
-
-From HTML5Reset
 
 @media screen and (max-width: 480px) {
 	
 		
 }
-
-*/
-
-	
