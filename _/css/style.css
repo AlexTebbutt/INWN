@@ -31,11 +31,81 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 input:-moz-placeholder { color:#a9a9a9; }
 textarea:-moz-placeholder { color:#a9a9a9; }
 
-
-/* Grid Layout
+/* HTML
+	
+	.row - Wrapper for all horzontal 'pages'
+	.block - Page wrapper
+	.content - Content wrapper
 -------------------------------------------------------------------------------*/
 
+html, body {
+	height: 100%;	
+	width: 100%;	
+}
 
+body {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.row, .block {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.row {
+	clear: left;
+	float:left;
+	overflow-y: hidden;
+}
+
+.row .block {
+	float: left;
+	margin-right: -100%;
+	overflow-x: hidden;
+}
+
+.row + .row {
+	margin-top: -20px;
+}
+
+
+.block ~ .block {
+	margin-left: 100%;
+	margin-right: -200%;
+}
+
+.block ~ .block ~ .block {
+	margin-left: 200%;
+	margin-right: -300%;	
+}
+
+.block ~ .block ~ .block ~ .block {
+	margin-left: 300%;
+	margin-right: -400%;	
+}
+
+.block ~ .block ~ .block ~ .block ~ .block {
+	margin-left: 400%;
+	margin-right: -500%;
+}
+
+.block ~ .block ~ .block ~ .block ~ .block ~ .block {
+	margin-left: 500%;
+	margin-right: -600%;
+}
+
+
+/* Typography
+-------------------------------------------------------------------------------*/
+/*
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
+*/
 
 
 
@@ -47,39 +117,3 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 
 
 }
-
-
-/* #Media Queries: From Skeleton.
-================================================== */
-
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
-
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
-
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
-
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
-
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
-	
-	
-/* All stuff I've commented out, nmay need to re-instate later. If not, delete */
-/* Media queries!
--------------------------------------------------------------------------------*/
-/*
-
-From HTML5Reset
-
-@media screen and (max-width: 480px) {
-	
-		
-}
-
-*/
-
-	

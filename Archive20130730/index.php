@@ -174,13 +174,22 @@ if (isset($_POST['submit']))
 	<meta property="og:url" content="" />
 	<meta property="og:image" content="" />
 
+	<style>
+	
+		#fade {
+			display: none;
+		}
+	
+	</style>
 </head>
 
 <body>
 
+<div>
+
 <header class="wrapper">
 
-	<h2>IF&nbsp;NOT&nbsp;WHY&nbsp;NOT</h2>
+	<h2 id="fade">IF&nbsp;NOT&nbsp;WHY&nbsp;NOT</h2>
 	<h1>Freelance Website Design &amp; Development</h1>
 	
 	<p>Yep, we're re-building so there's not much to see here I'm afraid.</p>
@@ -250,7 +259,7 @@ if($showForm)
 <?php
 }
 ?>
-	
+</div>
 <footer>
 
 <!-- Social Links go here -->
@@ -264,6 +273,17 @@ if($showForm)
 <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write("<script src='_/js/jquery-1.9.1.min.js'>\x3C/script>")</script>
+
+<script type="text/javascript">
+$(document).ready(function() { 
+
+    $('#fade').css('opacity', 0)
+	  .slideDown('slow')
+	  .animate(
+	    { opacity: 1 },
+	    { queue: false, duration: 'slow' }
+	  )
+});
 
 <!-- this is where we put our custom functions -->
 <!-- don't forget to concatenate and minify if needed -->
